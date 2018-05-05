@@ -15,7 +15,9 @@ const Review = ({data, transition}) => (
           <a href="http://www.dailyui.co/" target="_blank">
             100 Days of UI
           </a>. You can view the source{' '}
-          <a href="https://github.com/lionize/100-days-of-ui/" target="_blank">
+          <a
+            href="https://github.com/lionize/100-days-of-ui/tree/master/01"
+            target="_blank">
             on my GitHub
           </a>. I'd love to hear some feedback on this design; you can reach me
           on Twitter at{' '}
