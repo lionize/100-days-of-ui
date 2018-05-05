@@ -5,10 +5,10 @@ import Header from 'components/Header'
 class App extends Component {
   render() {
     return (
-      <div className="container w-screen h-screen p-4 m-auto">
+      <div className="max-w-lg w-screen h-screen p-4 m-auto">
         <Header />
-        <main className="w-full my-8 ">
-          <div className="p-4 w-full bg-white rounded border-purple-light border-t-4 border-solid shadow-lg">
+        <main className="w-full max-w-md m-auto my-8 ">
+          <div className="px-8 py-8 w-full bg-white rounded border-purple-light border-t-4 border-solid shadow-lg">
             <Registration />
           </div>
         </main>
