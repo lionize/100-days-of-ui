@@ -13,7 +13,7 @@ const Email = ({data, transition}) => (
         </p>
       </div>
       <input
-        type="text"
+        type="email"
         name="email"
         autoFocus
         defaultValue={data.email}
