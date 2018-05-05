@@ -2,15 +2,23 @@
   "name": "01-sign-up-form",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "build:css": "postcss src/styles/index.src.css -o src/index.css",
+    "watch:css": "postcss src/styles/index.src.css -o src/index.css -w",
+    "start": "npm run watch:css & react-scripts start",
+    "build": "npm run build:css && react-scripts build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-scripts": "1.1.4"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "autoprefixer": "^8.4.1",
+    "postcss-cli": "^5.0.0",
+    "tailwindcss": "^0.5.2"
   }
 }
