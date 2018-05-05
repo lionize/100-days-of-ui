@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Logo = ({size = '100%', animate = false}) => (
+const Logo = ({size = '100%', animate = false, fast = false}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={size}
@@ -23,6 +23,7 @@ const Logo = ({size = '100%', animate = false}) => (
       transform="translate(-11 -17)">
       <path
         id="inner"
+        className={fast ? 'animate-fast' : ''}
         style={{
           animationPlayState: animate ? 'running' : 'paused',
         }}
@@ -31,6 +32,7 @@ const Logo = ({size = '100%', animate = false}) => (
       <g>
         <path
           id="outer"
+          className={fast ? 'animate-fast' : ''}
           style={{
             animationPlayState: animate ? 'running' : 'paused',
           }}

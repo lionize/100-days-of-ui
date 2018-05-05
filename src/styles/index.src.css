@@ -2,14 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  @apply .underline .text-purple-light;
+}
+
+a:hover {
+  @apply .text-purple-dark;
+}
+
+.shout-out {
+  @apply .font-light;
+}
+.shout-out li {
+  @apply .mb-1;
+}
+.shout-out li:last-of-type {
+  @apply .mb-0;
+}
+
+.text-body {
+  @apply .text-base .font-light .text-purple-darker .leading-tight .mb-4;
+}
+
+.review-icon {
+  @apply .font-normal .text-purple-dark .leading-none .flex .items-center .py-1;
+}
+.review-icon svg {
+  width: 18px;
+  margin-right: 0.5rem;
+}
+.review-icon path {
+  fill: #d6bbfc;
+}
+
+input:focus {
+  outline: 0;
+}
+
 path#inner {
   animation: inner-flower 20s infinite ease-in-out;
   transform-origin: calc(50% + 11px) calc(50% + 17px);
+}
+path#inner.animate-fast {
+  animation-duration: 5s;
 }
 
 path#outer {
   animation: outer-flower 40s infinite ease-in-out;
   transform-origin: calc(50% + 11px) calc(50% + 17px);
+}
+path#outer.animate-fast {
+  animation-duration: 10s;
 }
 
 @keyframes inner-flower {
