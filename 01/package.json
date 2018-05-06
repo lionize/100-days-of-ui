@@ -2,6 +2,7 @@
   "name": "01-sign-up-form",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/registratr",
   "scripts": {
     "build:css": "postcss src/styles/index.src.css -o src/index.css",
     "watch:css": "postcss src/styles/index.src.css -o src/index.css -w",
