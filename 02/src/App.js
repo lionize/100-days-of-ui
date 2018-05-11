@@ -1,15 +1,11 @@
 import React, {Component} from 'react'
+import CardForm from './components/CardForm'
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div className="flex w-screen h-screen items-center justify-center bg-purple-dark bg-glamorous">
+        <CardForm />
       </div>
     )
   }
